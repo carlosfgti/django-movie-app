@@ -2,3 +2,4 @@ pipenv install Django==4.2
 pipenv shell
 django-admin startproject django_project .
 python3 manage.py runserver
+python3 manage.py startapp movies
