@@ -3,3 +3,5 @@ pipenv shell
 django-admin startproject django_project .
 python3 manage.py runserver
 python3 manage.py startapp movies
+python3 manage.py makemigrations
+python3 manage.py migrate
