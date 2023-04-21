@@ -5,6 +5,9 @@ class Genre(models.Model):
     name = models.CharField(max_length=255)
     created_at = models.DateTimeField(default=timezone.now)
 
+    def __str__(self) -> str:
+        return self.name
+
 class Movie(models.Model):
     title = models.CharField(max_length=255)
     release_year = models.IntegerField()
