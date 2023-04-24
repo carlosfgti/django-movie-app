@@ -1,34 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
-</head>
-<body>
+{% extends 'movies/base.html' %}
 
-    <h1>Movies</h1>
+{% block content %}
+<h1>Movies</h1>
     
-    <table>
-        <thread>
-            <tr>
-                <th>Title</th>
-                <th>Genre</th>
-                <th>Stock</th>
-                <th>Daily Rate</th>
-            </tr>
-        </thread>
-        <tbody>
-            {% for movie in movies %}
-            <tr>
-                <td>{{ movie.title }}</td>
-                <td>{{ movie.genre }}</td>
-                <td>{{ movie.number_in_stock }}</td>
-                <td>{{ movie.daily_rate }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</body>
-</html>
+<table>
+    <thread>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Stock</th>
+            <th>Daily Rate</th>
+        </tr>
+    </thread>
+    <tbody>
+        {% for movie in movies %}
+        <tr>
+            <td>{{ movie.title }}</td>
+            <td>{{ movie.genre }}</td>
+            <td>{{ movie.number_in_stock }}</td>
+            <td>{{ movie.daily_rate }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
