@@ -26,7 +26,7 @@ Movies
             <td class="px-6 py-4">{{ movie.daily_rate }}</td>
             <td class="px-6 py-4">
                 <!-- <a href="/movies/{{ movie.id }}"> -->
-                <a href="{% url 'movies_detail' movie.id %}">
+                <a href="{% url 'movies:detail' movie.id %}">
                     Detail
                 </a>
             </td>
