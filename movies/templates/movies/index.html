@@ -14,6 +14,7 @@ Movies
             <th class="px-6 py-3">Genre</th>
             <th class="px-6 py-3">Stock</th>
             <th class="px-6 py-3">Daily Rate</th>
+            <th class="px-6 py-3">Actions</th>
         </tr>
     </thread>
     <tbody>
@@ -23,6 +24,12 @@ Movies
             <td class="px-6 py-4">{{ movie.genre }}</td>
             <td class="px-6 py-4">{{ movie.number_in_stock }}</td>
             <td class="px-6 py-4">{{ movie.daily_rate }}</td>
+            <td class="px-6 py-4">
+                <!-- <a href="/movies/{{ movie.id }}"> -->
+                <a href="{% url 'movies_detail' movie.id %}">
+                    Detail
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </tbody>
