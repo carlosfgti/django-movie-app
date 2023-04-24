@@ -7,4 +7,4 @@ def index(request):
     movies = Movie.objects.all()
     # movies = ', '.join([movie.title for movie in movies])
     # return HttpResponse(movies)
-    return render(request, 'index.html', { 'movies': movies })
+    return render(request, 'movies/index.html', { 'movies': movies })
