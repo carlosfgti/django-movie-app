@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Movie {{ movie.title }}
+{% endblock %}
+
+{% block content %}
+<ul>
+    <li>Title -> {{ movie.title }}</li>
+    <li>Genre -> {{ movie.genre }}</li>
+    <li>Stock -> {{ movie.number_in_stock }}</li>
+    <li>Rate -> {{ movie.daily_rate }}</li>
+</ul>
+{% endblock %}
