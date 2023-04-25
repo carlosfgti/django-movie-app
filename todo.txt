@@ -6,3 +6,8 @@ python3 manage.py startapp movies
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py createsuperuser
+
+--
+API::
+pipenv install django-tastypie
+python3 manage.py startapp api
